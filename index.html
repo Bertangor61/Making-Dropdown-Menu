@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berke Tangör Ödev 3</title>
+</head>
+<body>
+    <div class="content">
+        <a class="buton">Anasayfa</a>
+        <a class="buton">Hakkımızda</a>
+        <a class="hover">Galeri</a>
+        <a class="buton">İletişim</a>
+        <div class="resimler">
+            <ul class="resimler-media">
+                <li>Doğa Resimleri</li>
+                <li>İnsan Resimleri</li>
+                <li>Araba Resimleri</li>
+                <li>Abstract Resimleri</li>
+            </ul>
+        </div>
+</div>
+
+</body>
+
+<!-- Css kodları Kısmı -->
+<style>
+.list li{
+    display: inline;
+}
+strong{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.hidden2{
+    visibility: hidden;
+}
+
+
+.resimler{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px!important;
+    background-color: bisque;   
+}
+.resimler .resimler-media{
+    list-style: none;
+    padding-left: 0;
+}
+.resimler .resimler-media li{
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom:10px ;
+    border-radius: 5px;
+}
+
+.content{
+    position: relative;
+    display: inline-block;
+}
+.buton{
+    background-color: rgb(219, 25, 25);
+    color: white;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.hover{
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.content:hover .resimler{
+    display: block;
+}
+</style>
+
+</html>
